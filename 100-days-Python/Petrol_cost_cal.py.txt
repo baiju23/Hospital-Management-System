@@ -1,0 +1,16 @@
+Practice question 4:- You are going on a bike trip.
+Ask:
+total kilometers
+bike mileage
+petrol price per litre
+Calculate total petrol cost
+
+"""
+a= int(input("Total KM : "))
+b= int(input("Bike milege :"))
+c= float(input("Petrol price/lit :"))
+Fuel_req = a/b
+total_petrol_cost = Fuel_req*c
+print("Fuel req :",Fuel_req)
+print("Total Petrol Cost :",total_petrol_cost)
+"""

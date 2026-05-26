@@ -1,0 +1,17 @@
+Pratice ques 5:- . Mobile Shop Bill
+Ask customer:
+mobile price
+charger price
+earphones price
+Add 18% GST and print final amount
+
+"""
+a=int(input("Mobile Price :"))
+b=int(input("Charger Price :"))
+c=int(input("Earphone Price :"))
+sum=a+b+c
+GST = (18/100) * sum
+final_bill = sum + GST
+print("GST :", GST)
+print("Final bill :", final_bill)
+"""

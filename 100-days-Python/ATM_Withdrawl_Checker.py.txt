@@ -1,0 +1,17 @@
+Pracice ques 12:- ATM Withdrawal Checker
+
+Ask user:
+account balance
+withdrawal amount
+Conditions:
+if withdrawal amount is greater than balance → "Insufficient Balance"
+otherwise → "Transaction Successful"
+
+"""
+Balance = int(input("Account Balance :"))
+Withdrawal = int(input("Withdrawal Amount :"))
+if Balance < Withdrawal:
+    print("Insufficient Balance")
+else:
+    print("Transaction Succesful")
+    """

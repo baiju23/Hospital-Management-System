@@ -1,0 +1,101 @@
+patients = []
+
+user_id = input("User ID : ")
+password = int(input("Password : "))
+
+if user_id == "baiju" and password == 7668:
+
+    print("Login Successful")
+
+    while True:
+
+        print("\nHospital Management System")
+
+        print("1. Add Patient")
+        print("2. View Patient")
+        print("3. Staff Details")
+        print("4. Exit")
+        print("5. Search Patient")
+        print("6. Delete Patient")
+
+        choice = int(input("Enter Your Choice : "))
+
+        if choice == 1:
+
+            name = input("Enter Patient Name : ")
+            age = int(input("Patient Age : "))
+            disease = input("Disease Name : ")
+
+            patient = {
+                "Name": name,
+                "Age": age,
+                "Disease": disease
+            }
+
+            patients.append(patient)
+
+            print("Patient Added Successfully")
+
+        elif choice == 2:
+
+            if len(patients) == 0:
+                print("No Patient Records Found")
+
+            else:
+                for patient in patients:
+                    print(patient)
+
+        elif choice == 3:
+
+            print("Showing Staff Details")
+
+        elif choice == 5:
+
+            search_name = input("Enter Patient Name : ")
+
+            found = False
+
+            for patient in patients:
+
+                if patient["Name"] == search_name:
+
+                    print(patient)
+
+                    found = True
+
+            if found == False:
+                print("Patient Not Found")
+
+        elif choice == 6:
+
+            delete_name = input("Enter Patient Name to Delete : ")
+
+            found = False
+
+            for patient in patients:
+
+                if patient["Name"] == delete_name:
+
+                    patients.remove(patient)
+
+                    print("Patient Deleted Successfully")
+
+                    found = True
+
+                    break
+
+            if found == False:
+                print("Patient Not Found")
+
+        elif choice == 4:
+
+            print("System Closed")
+            break
+
+        else:
+
+            print("Invalid Choice")
+
+else:
+
+    print("Incorrect User ID or Password")

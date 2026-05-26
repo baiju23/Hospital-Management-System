@@ -1,0 +1,8 @@
+Practice ques 7:- A gym app wants to calculate a person’s BMI.
+
+"""
+weight=int(input("Body Weight in kg :"))
+hight=float(input("Your Hight in meter :"))
+BMI = weight/hight**2
+print("Your BMI is :",BMI)
+"""

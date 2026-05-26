@@ -1,0 +1,9 @@
+Practice ques 10:- Password Checker
+
+"""""
+password= input("Enter password : ")
+if password == "baiju@123":
+    print("Acess Granted")
+else:
+    print("Acess Denied")
+    """
